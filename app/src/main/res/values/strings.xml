@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Almacenes GDO V3</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
