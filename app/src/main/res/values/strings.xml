@@ -5,7 +5,18 @@
     <string name="pass">Contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="title_activity_menu">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Traspasos</string>
+    <string name="title_dashboard">Inventarios</string>
+    <string name="title_notifications">Compras</string>
+
+    <string name="codigo">Codigo</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="unidad">Unidad</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="tipoBusqueda">Buscar por coincidencia de texto</string>
+
+    <string name="almaceno">Almacen origen </string>
+    <string name="almacend">Almacen destino</string>
+
+    <string name="estante">Estante</string>
 </resources>
