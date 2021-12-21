@@ -7,20 +7,26 @@ public class Productos implements Serializable {
     private String descripcion;
     private String unidad;
     private String cantidad;
+    private String costo;
+    private String precio;
 
     public Productos(){}
 
-    public Productos(String codigo, String descripcion, String unidades, String cantidad) {
+    public Productos(String codigo, String descripcion, String unidad, String cantidad, String costo, String precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
-        this.unidad = unidades;
+        this.unidad = unidad;
         this.cantidad = cantidad;
+        this.costo = costo;
+        this.precio = precio;
     }
 
-    public Productos(String codigo, String descripcion, String unidades) {
+    public Productos(String codigo, String descripcion, String unidad, String costo, String precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
-        this.unidad = unidades;
+        this.unidad = unidad;
+        this.costo = costo;
+        this.precio = precio;
     }
 
     public String getCodigo() {
@@ -39,6 +45,14 @@ public class Productos implements Serializable {
         return cantidad;
     }
 
+    public String getPrecio() {
+        return precio;
+    }
+
+    public String getCosto() {
+        return costo;
+    }
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
@@ -55,6 +69,14 @@ public class Productos implements Serializable {
         this.cantidad = cantidad;
     }
 
+    public void setCosto(String costo) {
+        this.costo = costo;
+    }
+
+    public void setPrecio(String precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
         return "Productos{" +
@@ -62,6 +84,8 @@ public class Productos implements Serializable {
                 ", descripcion='" + descripcion + '\'' +
                 ", unidad='" + unidad + '\'' +
                 ", cantidad='" + cantidad + '\'' +
+                ", costo='" + costo + '\'' +
+                ", precio='" + precio + '\'' +
                 '}';
     }
 }
