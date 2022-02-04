@@ -3,30 +3,35 @@ package com.example.almacenesgdov3.objetos;
 import java.io.Serializable;
 
 public class Productos implements Serializable {
+    private String id;
     private String codigo;
     private String descripcion;
     private String unidad;
     private String cantidad;
     private String costo;
-    private String precio;
+    private  String precio;
 
     public Productos(){}
 
-    public Productos(String codigo, String descripcion, String unidad, String cantidad, String costo, String precio) {
+    public Productos(String id, String codigo, String descripcion, String unidad, String cantidad) {
+        this.id = id;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.unidad = unidad;
         this.cantidad = cantidad;
-        this.costo = costo;
-        this.precio = precio;
     }
 
-    public Productos(String codigo, String descripcion, String unidad, String costo, String precio) {
+    public Productos(String id, String codigo, String descripcion, String unidad, String costo, String precio) {
+        this.id = id;
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.unidad = unidad;
         this.costo = costo;
         this.precio = precio;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getCodigo() {
@@ -45,12 +50,16 @@ public class Productos implements Serializable {
         return cantidad;
     }
 
-    public String getPrecio() {
-        return precio;
+    public String getCosto(){
+        return costo;
     }
 
-    public String getCosto() {
-        return costo;
+    public String getPrecio(){
+        return  precio;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setCodigo(String codigo) {
@@ -69,18 +78,19 @@ public class Productos implements Serializable {
         this.cantidad = cantidad;
     }
 
-    public void setCosto(String costo) {
+    public void setCosto(String costo){
         this.costo = costo;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(String precio){
         this.precio = precio;
     }
 
     @Override
     public String toString() {
         return "Productos{" +
-                "codigo='" + codigo + '\'' +
+                "id='" + id + '\'' +
+                ", codigo='" + codigo + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", unidad='" + unidad + '\'' +
                 ", cantidad='" + cantidad + '\'' +

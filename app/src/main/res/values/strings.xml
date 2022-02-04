@@ -19,4 +19,8 @@
     <string name="almacend">Almacen destino</string>
 
     <string name="estante">Estante</string>
+
+    <string name="servername">http://bacaldistribucion.site/nuevas_conexiones/</string>
+
+    <string name="seleccion">Selecciona Producto</string>
 </resources>

@@ -8,17 +8,21 @@ public class Usuarios implements Serializable {
     private String idAlmacen;
     private String idSucursal;
     private String idPuesto;
+    private String idEstante;
+    private String statusUsuario;
 
     public Usuarios(){
 
     }
 
-    public Usuarios(String name, String id, String idAlmacen, String idSucursal, String idPuesto) {
+    public Usuarios(String name, String id, String idAlmacen, String idSucursal, String idPuesto, String idEstante, String statusUsuario) {
         this.name = name;
         this.id = id;
         this.idAlmacen = idAlmacen;
         this.idSucursal = idSucursal;
         this.idPuesto = idPuesto;
+        this.idEstante = idEstante;
+        this.statusUsuario = statusUsuario;
     }
 
     public String getName() {
@@ -61,6 +65,21 @@ public class Usuarios implements Serializable {
         this.idPuesto = idPuesto;
     }
 
+    public  String getIdEstante(){
+        return idEstante;
+    }
+
+    public void setIdEstante(String idEstante) {
+        this.idEstante = idEstante;
+    }
+
+    public String getStatusUsuario() {
+        return statusUsuario;
+    }
+
+    public void setStatusUsuario(String statusUsuario) {
+        this.statusUsuario = statusUsuario;
+    }
 
     @Override
     public String toString() {
@@ -70,6 +89,8 @@ public class Usuarios implements Serializable {
                 ", idAlmacen='" + idAlmacen + '\'' +
                 ", idSucursal='" + idSucursal + '\'' +
                 ", idPuesto='" + idPuesto + '\'' +
+                ", idEstante='" + idEstante + '\'' +
+                ", statusUsuario='" + statusUsuario + '\'' +
                 '}';
     }
 }

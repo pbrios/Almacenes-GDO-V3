@@ -4,4 +4,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="textog">16dp</dimen>
+
+    <dimen name="separador_chico">5dp</dimen>
+    <dimen name="separador_mediano">20dp</dimen>
+    <dimen name="separador_grande">35dp</dimen>
+    <dimen name="texto_grande">15dp</dimen>
 </resources>
